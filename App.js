@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import './App.css'; // Import custom CSS
+import './App.css'; 
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
@@ -9,7 +9,7 @@ function App() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [todoList, setTodoList] = useState([]);
   
-  const navigate = useNavigate(); // useNavigate hook for navigation
+  const navigate = useNavigate(); 
 
   const onFormSubmit = (todoobj) => {
     setTodoList([...todoList, todoobj.task]);
