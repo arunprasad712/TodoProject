@@ -48,7 +48,7 @@ function App() {
       <Routes>
         <Route path="/" element={<div className="text-center mt-5">Home</div>} />
         <Route path="Show" element={<TodoList todoList={todoList} />} />
-        {/* Redirect to Home if the route is not found */}
+        
         <Route path="*" element={<div className="text-center mt-5">Page Not Found</div>} />
       </Routes>
     </div>
