@@ -1,48 +1,57 @@
-/* App.css */
-body {
-  background-color: #f8f9fa;
+body{
+  background-color: bisque;
 }
 
 .App {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-button {
-  font-size: 1rem;
-}
-
-.todo-list-container {
-  margin-top: 2rem;
+.btn {
+  margin: 5px;
 }
 
 .list-group-item {
-  font-size: 1.5rem;
-  background-color: #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.list-group-item-action:hover {
-  background-color: #ced4da;
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .list-group-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 5px;
+  }
 }
 
-.alert-info {
-  background-color: #cce5ff;
-  color: #004085;
-}
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
 
-.alert-danger {
-  background-color: #f8d7da;
-  color: #721c24;
-}
+  .list-group-item {
+    font-size: 14px;
+  }
 
-.alert {
-  margin-top: 1rem;
+  .btn {
+    font-size: 14px;
+  }
 }
